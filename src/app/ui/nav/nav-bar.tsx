@@ -7,7 +7,7 @@ export default function NavBar() {
 
   return (
     <NavigationMenu.Root className='sticky top-0 bg-neutral-800 text-neutral-400 '>
-      <NavigationMenu.List className='pl-8 pr-2 py-2 flex justify-between animate-fade-in'>
+      <NavigationMenu.List className='pl-4 sm:pl-8 pr-4 py-4 flex justify-between animate-fade-in'>
         <NavigationMenu.Item>
           <NavLink>
             Yong Jing

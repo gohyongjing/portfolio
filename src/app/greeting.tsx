@@ -25,12 +25,12 @@ export default function Greeting() {
 
   return (
     <>
-      <div className="mx-20 text-xl">
+      <div className="mx-10 sm:mx-20 text-2xl">
         {
           completeGreeting.substring(0, step)
         }
       </div>
-        <div className="flex ml-12 mt-4 mb-10 text-8xl text-blue-500">
+        <div className="flex ml-12 mt-4 mb-10 text-4xl sm:text-8xl text-blue-500">
           <b>
             {
               completeName.substring(0, nameIndex)

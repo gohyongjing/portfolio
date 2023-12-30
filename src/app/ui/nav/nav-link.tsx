@@ -8,7 +8,7 @@ type NavBarProps = {
 
 export default function NavLink({children}: NavBarProps) {
   return (
-    <NavigationMenu.Link className='hover:text-neutral-50 cursor-pointer'>
+    <NavigationMenu.Link className='text-xl hover:text-neutral-50 cursor-pointer'>
         {children}
     </NavigationMenu.Link>
   );
