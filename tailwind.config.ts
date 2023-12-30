@@ -13,6 +13,23 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      keyframes: {
+        blink: {
+          '0%': {opacity: '0'},
+          '49%': {opacity: '0'},
+          '50%': {opacity: '1'},
+          '100%': {opacity: '1'}
+        },
+        'fade-in': {
+          '0%': {opacity: '0'},
+          '80%': {opacity: '0'},
+          '100%': {opacity: '1'}
+        }
+      },
+      animation: {
+        blink: 'blink 1s infinite',
+        'fade-in': 'fade-in ease 5s'
+      },
     },
   },
   plugins: [],
