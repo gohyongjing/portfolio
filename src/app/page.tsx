@@ -38,7 +38,7 @@ export default function Home() {
                   <>
                     [TypeScript, ReactJS, TailwindCSS, Firebase]
                     <br />
-                    (May 2023 - Jul 23)
+                    (May 2023 - Jul 2023)
                   </>
                 }
                 content="Collaborated with developers and designers to maintain and improve on the Web App built for Growthbean's support group program for participants' sharing and introspection"
@@ -57,7 +57,7 @@ export default function Home() {
                       [TypeScript, ReactJS, Express, socket.io, RabbitMQ, AWS EC2, AWS ELB]                    <br />
                     </>
                   }
-                  content="Created website to match users in to prepare for interviews by solve programming questions in a shared real-time collaborative space"
+                  content="Created website to match users in to prepare for interviews by solving programming questions in a shared real-time collaborative space"
                 />
                 <Subsection
                   heading="Snail Express"
@@ -66,7 +66,7 @@ export default function Home() {
                       [TypeScript, ReactJS, Firebase]
                     </>
                   }
-                  content="Developed a online learning platform consisting of forums, live lecture feedback and live quizzes for online classes in a team of 2"
+                  content="Developed an online learning platform consisting of forums, live lecture feedback and live quizzes for online classes in a team of 2"
                 />
               </>
               
