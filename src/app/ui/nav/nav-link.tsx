@@ -1,15 +1,22 @@
 'use client';
 
 import { NavigationMenu } from '@/lib/radix-ui';
+import Link from 'next/link';
 
 type NavBarProps = {
+  href: string
   children: React.ReactNode
 }
 
-export default function NavLink({children}: NavBarProps) {
+export default function NavLink({
+  href,
+  children
+}: NavBarProps) {
   return (
-    <NavigationMenu.Link className='text-xl hover:text-neutral-50 cursor-pointer'>
+    <Link href={href} passHref legacyBehavior>
+      <NavigationMenu.Link className='hover:text-neutral-50 cursor-pointer'>
         {children}
-    </NavigationMenu.Link>
+      </NavigationMenu.Link>
+    </Link>
   );
 }

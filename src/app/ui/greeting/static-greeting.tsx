@@ -1,26 +1,13 @@
-'use client';
-
-import { useEffect, useState } from "react";
-
-const completeGreeting = 'Hello, I\'m';
+const completeGreeting = 'Hello! I\'m';
 const completeName = 'Yong Jing';
 
-const lastStep = completeGreeting.length + completeName.length;
-const durations = [100, 70, 140, 210];
+export const lastStep = completeGreeting.length + completeName.length;
 
-export default function Greeting() {
-  const [step, setStep] = useState(0);
-  
-  useEffect(() => {
-    if (step == lastStep) {
-      return;
-    }
-    const duration = durations[step % durations.length];
-    const interval = setTimeout(() => setStep(step + 1), duration)
+type StaticGreetingProps = {
+  step?: number
+}
 
-    return () => clearInterval(interval);
-  }, [step]);
-
+export default function StaticGreeting({step = lastStep}: StaticGreetingProps) {
   const nameIndex = Math.max(step - completeGreeting.length, 0);
 
   return (
