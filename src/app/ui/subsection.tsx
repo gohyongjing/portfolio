@@ -16,13 +16,13 @@ export default function Subsection({
       <h2 className="my-1 text-2xl">
         {heading}
       </h2>
-      <h3 className="text-neutral-400">
+      <h3 className="text-neutral-500 dark:text-neutral-400">
         {additionalInfo}
       </h3>
       <p className="my-4">
         {content}
       </p>
-      <h3 className="text-emerald-400">
+      <h3 className="text-blue-600 dark:text-emerald-400">
         {subheading}
       </h3>
     </div>

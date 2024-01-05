@@ -8,7 +8,7 @@ import Footer from "./ui/footer";
 
 export default function Home() {
   return (
-    <div className="bg-neutral-800 text-neutral-50">
+    <div className="bg-neutral-50 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-50">
       <NavBar />
       <div className="flex flex-col">
         <div className="md:mx-24 h-[90vh] flex flex-col justify-center">

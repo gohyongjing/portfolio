@@ -20,7 +20,7 @@ export default function StaticGreeting({step = lastStep}: StaticGreetingProps) {
           partialGreeting
         }
       </div>
-      <div className="flex ml-12 mt-4 mb-10 text-4xl sm:text-8xl text-blue-500">
+      <div className="flex ml-12 mt-4 mb-10 text-4xl sm:text-8xl text-blue-600 dark:text-emerald-400">
         <b>
           {
             partialName
