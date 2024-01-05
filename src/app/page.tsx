@@ -1,15 +1,16 @@
 import NavBar from "@/app/ui/nav/nav-bar";
-import SocialMediaIcons from "./social-media-icons";
+import SocialMediaIcons from "./ui/social-media-icons";
 import Separator from "./ui/separator";
 import Greeting from "./ui/greeting/greeting";
 import Section from "./ui/section";
 import Subsection from "./ui/subsection";
+import Footer from "./ui/footer";
 
 export default function Home() {
   return (
-    <>
+    <div className="bg-neutral-800 text-neutral-50">
       <NavBar />
-      <div className="flex flex-col bg-neutral-800 text-neutral-50">
+      <div className="flex flex-col">
         <div className="md:mx-24 h-[90vh] flex flex-col justify-center">
           <Greeting />
           <Separator />
@@ -69,11 +70,13 @@ export default function Home() {
                   content="Developed an online learning platform consisting of forums, live lecture feedback and live quizzes for online classes in a team of 2"
                 />
               </>
-              
             }
           />
         </div>
       </div>
-    </>
+      <div className="h-40" />
+      <Separator />
+      <Footer />
+    </div>
   );
 }

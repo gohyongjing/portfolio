@@ -4,7 +4,7 @@ import { Icons } from "@/lib/radix-ui";
 
 export default function SocialMediaIcons() {
   return (
-    <div className="flex mx-16 gap-2 animate-fade-in">
+    <div className="flex my-2 ml-16 mr-4 gap-4 animate-fade-in">
       <a target="_blank" href="https://github.com/gohyongjing" rel="noopener noreferrer">
         <Icons.GitHubLogoIcon className=" w-6 h-6 text-neutral-400 hover:text-neutral-50 cursor-pointer"/>
       </a>

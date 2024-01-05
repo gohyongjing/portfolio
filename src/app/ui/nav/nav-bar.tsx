@@ -6,7 +6,7 @@ import NavLink from './nav-link';
 export default function NavBar() {
 
   return (
-    <NavigationMenu.Root className='sticky top-0 bg-neutral-800 text-neutral-300 '>
+    <NavigationMenu.Root className='sticky top-0 bg-neutral-800 bg-opacity-80 text-neutral-300'>
       <NavigationMenu.List className='pl-4 sm:pl-8 pr-4 py-4 flex justify-between animate-fade-in'>
         <NavigationMenu.Item>
           <NavLink href='/'>
