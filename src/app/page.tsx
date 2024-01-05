@@ -35,13 +35,8 @@ export default function Home() {
             content={
               <Subsection
                 heading="Web Developer • Growthbeans"
-                subheading={
-                  <>
-                    [TypeScript, ReactJS, TailwindCSS, Firebase]
-                    <br />
-                    (May 2023 - Jul 2023)
-                  </>
-                }
+                subheading='[TypeScript, ReactJS, TailwindCSS, Firebase]'
+                additionalInfo='May 2023 - Jul 2023'
                 content="Collaborated with developers and designers to maintain and improve on the Web App built for Growthbean's support group program for participants' sharing and introspection"
               />
             }
@@ -55,10 +50,19 @@ export default function Home() {
                   heading="PeerPrep"
                   subheading={
                     <>
-                      [TypeScript, ReactJS, Express, socket.io, RabbitMQ, AWS EC2, AWS ELB]                    <br />
+                      [TypeScript, ReactJS, Express, socket.io, RabbitMQ, AWS EC2, AWS ELB]
                     </>
                   }
-                  content="Created website to match users in to prepare for interviews by solving programming questions in a shared real-time collaborative space"
+                  content="Real-time collaborative platform that matches users to prepare for interviews by solving programming questions together"
+                />
+               <Subsection
+                  heading="FriendlyLink"
+                  subheading={
+                    <>
+                      [Java, Gradle, JUnit]
+                    </>
+                  }
+                  content="Command based app for administrative staff of voluntary wellfare organisations to easily record personal information of elderly members and volunteers and pair them up"
                 />
                 <Subsection
                   heading="Snail Express"
@@ -67,7 +71,7 @@ export default function Home() {
                       [TypeScript, ReactJS, Firebase]
                     </>
                   }
-                  content="Developed an online learning platform consisting of forums, live lecture feedback and live quizzes for online classes in a team of 2"
+                  content="An online learning platform for blended learning consisting of forums, live lecture feedback and live quizzes. Developed in response to COVID-19 moving lessons online"
                 />
               </>
             }

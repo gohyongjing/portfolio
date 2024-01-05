@@ -17,7 +17,7 @@ export default function Section({
           scrolling without being blocked by the nav bar */
         }
       </div>
-      <h1 className="my-2 text-2xl text-blue-500">
+      <h1 className="my-3 text-3xl text-blue-500">
         {heading}
       </h1>
       {content}
