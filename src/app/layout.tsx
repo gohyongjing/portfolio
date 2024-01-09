@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Source_Code_Pro } from 'next/font/google'
-import { Analytics } from '@/lib/vercel';
+import { Analytics, SpeedInsights } from '@/lib/vercel';
 import './globals.css'
 
 const sourceCodePro = Source_Code_Pro({ subsets: ['latin'] });
@@ -20,6 +20,7 @@ export default function RootLayout({
       <body className={sourceCodePro.className}>
         {children}
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )
