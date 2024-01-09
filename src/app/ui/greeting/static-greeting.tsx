@@ -26,7 +26,7 @@ export default function StaticGreeting({step = lastStep}: StaticGreetingProps) {
             partialName
           }
         </b>
-        <span className="text-neutral-700 animate-blink">
+        <span className="text-neutral-300 dark:text-neutral-700 animate-blink">
           {
             step == lastStep ? '|' : ''
           }
