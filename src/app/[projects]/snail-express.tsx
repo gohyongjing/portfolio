@@ -1,6 +1,8 @@
+import ExternalLinkIcon from "../ui/icon/external-link";
+import GithubIcon from "../ui/icon/github";
+import LinkIcon from "../ui/icon/link-icon";
 import Subsection from "../ui/section/subsection";
 import UnorderedList from "../ui/unordered-list";
-import SnailExpressIcons from "./snail-express-icons";
 
 const id = 'snail-express';
 
@@ -33,7 +35,22 @@ export default function SnailExpressSubsection({expanded}: {expanded: string}) {
       <p>
         We managed to fix the bugs in the end! While not fully complete, we managed to complete the project with more than just the minimum viable product, with gamification elements like levels and achievements. More importantly, we learned a lot from this experience.
       </p>
-      <SnailExpressIcons />
+      <div className="flex gap-4">
+        <LinkIcon
+          href='https://snail-express.firebaseapp.com/'
+          label='Link to Snail Express website'
+        >
+          <ExternalLinkIcon />
+          Snail Express
+        </LinkIcon>
+        <LinkIcon
+          href='https://github.com/gohyongjing/snail-express'
+          label='Link to Github Repository'
+        >
+          <GithubIcon />
+          Github Repo
+        </LinkIcon>
+      </div>
     </div>
   </Subsection>
 }

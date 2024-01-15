@@ -7,7 +7,7 @@ import ThemeToggle from '../theme-toggle';
 export default function NavBar() {
 
   return (
-    <NavigationMenu.Root className='sticky top-0 bg-neutral-50 bg-opacity-80 text-neutral-600 dark:bg-opacity-80 dark:bg-neutral-800 dark:text-neutral-300'>
+    <NavigationMenu.Root className='sticky top-0 bg-neutral-50 bg-opacity-90 text-neutral-500 dark:bg-opacity-80 dark:bg-neutral-800 dark:text-neutral-300'>
       <NavigationMenu.List className='pl-4 sm:pl-8 pr-4 py-4 flex justify-between animate-fade-in'>
         <NavigationMenu.Item>
           <NavLink href='/'>

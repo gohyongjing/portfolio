@@ -33,7 +33,7 @@ export default function ThemeToggle() {
   }, [])
 
   return (
-    <button onClick={handleClick} className="h-6 w-6 rounded-sm flex justify-center items-center bg-neutral-300 dark:bg-neutral-700">
+    <button onClick={handleClick} className="h-6 w-6 rounded-sm flex justify-center items-center bg-neutral-200 hover:text-neutral-800 hover:bg-neutral-500 dark:bg-neutral-700 dark:hover:text-neutral-50">
       {
         theme == 'dark' ? <SunIcon /> : <MoonIcon />
       }
