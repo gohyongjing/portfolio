@@ -1,12 +1,22 @@
 import NavBar from "@/app/ui/nav/nav-bar";
-import SocialMediaIcons from "./ui/social-media-icons";
+import SocialMediaIcons from "./ui/icon/social-media-icons";
 import Separator from "./ui/separator";
 import Greeting from "./ui/greeting/greeting";
-import Section from "./ui/section";
-import Subsection from "./ui/subsection";
+import Section from "./ui/section/section";
+import Subsection from "./ui/section/subsection";
 import Footer from "./ui/footer";
+import SnailExpressSection from "./[projects]/snail-express";
+import SnailExpressSubsection from "./[projects]/snail-express";
 
-export default function Home() {
+export default function Home({
+  searchParams,
+}: {
+  searchParams?: {
+    expanded?: string;
+  };
+}) {
+  const expanded = searchParams?.expanded ?? '';
+
   return (
     <div className="bg-neutral-50 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-50">
       <NavBar />
@@ -16,7 +26,7 @@ export default function Home() {
           <Separator />
           <SocialMediaIcons />
         </div>
-        <div className="flex flex-col animate-fade-in">
+        <div className="flex flex-col">
           <Section
             heading={'About Me'}
             id='about'
@@ -64,15 +74,7 @@ export default function Home() {
                   }
                   content="Command based app for administrative staff of voluntary wellfare organisations to easily record personal information of elderly members and volunteers and pair them up"
                 />
-                <Subsection
-                  heading="Snail Express"
-                  subheading={
-                    <>
-                      [TypeScript, ReactJS, Firebase]
-                    </>
-                  }
-                  content="An online learning platform for blended learning consisting of forums, live lecture feedback and live quizzes. Developed in response to COVID-19 moving lessons online"
-                />
+                <SnailExpressSubsection expanded={expanded} />
               </>
             }
           />
