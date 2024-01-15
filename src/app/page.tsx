@@ -31,12 +31,12 @@ export default function Home({
             heading={'About Me'}
             id='about'
             content={
-              <>
+              <p className="mx-8">
                 Seeking to build simple, elegant solutions to complex problems
                 <br />
                 <br />
                 Year 3 Computer Science student @ NUS
-              </>
+              </p>
             }
           />
           <Section

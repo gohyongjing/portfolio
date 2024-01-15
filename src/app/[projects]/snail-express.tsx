@@ -41,14 +41,18 @@ export default function SnailExpressSubsection({expanded}: {expanded: string}) {
           label='Link to Snail Express website'
         >
           <ExternalLinkIcon />
-          Snail Express
+          <span className="hidden sm:inline">
+            Snail Express
+          </span>
         </LinkIcon>
         <LinkIcon
           href='https://github.com/gohyongjing/snail-express'
           label='Link to Github Repository'
         >
           <GithubIcon />
-          Github Repo
+          <span className="hidden sm:inline">
+            Github Repo
+          </span>
         </LinkIcon>
       </div>
     </div>

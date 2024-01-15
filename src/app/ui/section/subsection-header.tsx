@@ -40,9 +40,9 @@ export default function SubsectionHeader({
     {
       expandable
         ? expanded
-          ? <ChevronRightIcon className="w-6 h-6 cursor-pointer"/>
+          ? <ChevronRightIcon className="w-6 h-6 opacity-0 group-hover:opacity-100 cursor-pointer"/>
           : <ChevronDownIcon className="w-6 h-6 opacity-0 group-hover:opacity-100 cursor-pointer"/>
-        : <span className="w-4"></span>
+        : <span className="w-6"></span>
     }
     <h2 className={`w-full my-1 text-2xl group-hover:opacity-100 ${expandable ? 'cursor-pointer' : ''}`}>
       {heading}
