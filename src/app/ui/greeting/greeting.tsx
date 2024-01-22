@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import StaticGreeting, { lastStep } from "./static-greeting";
 
-const durations = [100, 70, 140, 210];
+const durations = [50, 35, 70, 105];
 
 export default function Greeting() {
   const [step, setStep] = useState(0);

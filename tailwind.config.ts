@@ -28,7 +28,7 @@ const config: Config = {
       },
       animation: {
         blink: 'blink 1s infinite',
-        'fade-in': 'fade-in ease 5s'
+        'fade-in': 'fade-in ease 2500ms'
       },
     },
   },

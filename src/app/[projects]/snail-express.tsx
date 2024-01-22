@@ -1,3 +1,5 @@
+'use client';
+
 import ExternalLinkIcon from "../ui/icon/external-link";
 import GithubIcon from "../ui/icon/github";
 import LinkIcon from "../ui/icon/link-icon";
@@ -9,12 +11,19 @@ const id = 'snail-express';
 export default function SnailExpressSubsection({expanded}: {expanded: string}) {
   return <Subsection
     heading="Snail Express"
+    additionalInfo='May 2022 - Jul 2022'
     subheading='[TypeScript, ReactJS, Firebase]'
     content="An online learning platform for blended learning consisting of forums, live lecture feedback and live quizzes. Developed in response to COVID-19 moving lessons online"
     expanded={expanded == id}
     id={id}
   >
     <div className="my-4 flex flex-col gap-8">
+      <iframe 
+        title="Snail express Homepage"
+        scrolling="no"
+        className="my-8 self-center w-48 h-44 sm:w-full pointer-events-none"
+        src="https://snail-express.firebaseapp.com/"
+      />
       <p>
         This is my very first web development project! This is a graded project for NUS Orbital to be completed together by me and my friend Nicholas. I started off by learning the basics from The Odin Project, from the command line and git to fundamentals of web development in HTML, CSS and JavaScript, and ending in industry standard frameworks like Express and React. Nicholas and I split up the work to implement the different features and started coding.
       </p>
