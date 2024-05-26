@@ -5,8 +5,8 @@ import Greeting from "./ui/greeting/greeting";
 import Section from "./ui/section/section";
 import Subsection from "./ui/section/subsection";
 import Footer from "./ui/footer";
-import SnailExpressSection from "./[projects]/snail-express";
 import SnailExpressSubsection from "./[projects]/snail-express";
+import GrowthBeansSubsection from "./[projects]/growthbeans";
 
 export default function Home({
   searchParams,
@@ -26,7 +26,7 @@ export default function Home({
           <Separator />
           <SocialMediaIcons />
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col gap-32">
           <Section
             heading={'About Me'}
             id='about'
@@ -43,12 +43,7 @@ export default function Home({
             heading="Work"
             id='work'
             content={
-              <Subsection
-                heading="Web Developer • Growthbeans"
-                subheading='[TypeScript, ReactJS, TailwindCSS, Firebase]'
-                additionalInfo='May 2023 - Jul 2023'
-                content="Collaborated with developers and designers to maintain and improve on the Web App built for Growthbean's support group program for participants' sharing and introspection"
-              />
+              <GrowthBeansSubsection expanded={expanded} />
             }
           />
           <Section

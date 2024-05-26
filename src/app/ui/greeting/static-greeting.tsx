@@ -14,7 +14,7 @@ export default function StaticGreeting({step = lastStep}: StaticGreetingProps) {
 
   return (
     <div className={step == 0 ? 'animate-fade-in' : ''}>
-      <div className="mx-10 sm:mx-20 text-2xl">
+      <div className="ml-12 text-2xl">
         {
           partialGreeting
         }

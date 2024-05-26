@@ -21,7 +21,7 @@ export default function SnailExpressSubsection({expanded}: {expanded: string}) {
       <iframe 
         title="Snail express Homepage"
         scrolling="no"
-        className="my-8 self-center w-48 h-44 sm:w-full pointer-events-none"
+        className="my-8 self-center xs:w-48 h-[5.5rem] lg:h-[72rem] sm:w-full pointer-events-none"
         src="https://snail-express.firebaseapp.com/"
       />
       <p>
