@@ -15,13 +15,16 @@ export default function GrowthBeansSubsection({expanded}: {expanded: string}) {
     expanded={expanded == id}
     id={id}
   >
+    <iframe 
+      title="Growthbeans page"
+      scrolling="no"
+      className="my-4 self-center h-[44rem] w-full pointer-events-none"
+      src="https://www.growthbeans.com/growth-circles.html"
+    />
+    <h3 className="mb-8 text-neutral-500 dark:text-neutral-400">
+      Published: Jun 2024
+    </h3>
     <div className="my-4 flex flex-col gap-8 leading-8">
-      <iframe 
-        title="Growthbeans page"
-        scrolling="no"
-        className="my-8 self-center h-[44rem] w-full pointer-events-none"
-        src="https://www.growthbeans.com/growth-circles.html"
-      />
       <p>
         This is my very first internship! Growthbeans is a social enterprise that empowers individuals to grow meaningfully. I was tasked to work on the GrowthCircles Web App, which helps facilitators hold support group sessions to improve participant&apos;s mental well-being and people skills. The Web App prompts participants with meaningful questions, facilitates interaction among participants and helps record their reflections.
       </p>

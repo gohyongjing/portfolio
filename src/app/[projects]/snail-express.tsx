@@ -17,13 +17,16 @@ export default function SnailExpressSubsection({expanded}: {expanded: string}) {
     expanded={expanded == id}
     id={id}
   >
+    <iframe 
+      title="Snail express Homepage"
+      scrolling="no"
+      className="my-4 self-center xs:w-48 h-[5.5rem] lg:h-[72rem] sm:w-full pointer-events-none"
+      src="https://snail-express.firebaseapp.com/"
+    />
+    <h3 className="mb-8 text-neutral-500 dark:text-neutral-400">
+      Published: Jan 2024
+    </h3>
     <div className="my-4 flex flex-col gap-8">
-      <iframe 
-        title="Snail express Homepage"
-        scrolling="no"
-        className="my-8 self-center xs:w-48 h-[5.5rem] lg:h-[72rem] sm:w-full pointer-events-none"
-        src="https://snail-express.firebaseapp.com/"
-      />
       <p>
         This is my very first web development project! This is a graded project for NUS Orbital to be completed together by me and my friend Nicholas. I started off by learning the basics from The Odin Project, from the command line and git to fundamentals of web development in HTML, CSS and JavaScript, and ending in industry standard frameworks like Express and React. Nicholas and I split up the work to implement the different features and started coding.
       </p>

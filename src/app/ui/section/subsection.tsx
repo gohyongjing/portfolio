@@ -27,16 +27,16 @@ export default function Subsection({
         expandable={Boolean(children)}
         id={id}
       />
-      <div className="my-8 mx-8">
+      <div className="mb-8 mx-8">
         <h3 className="text-neutral-500 dark:text-neutral-400">
           {additionalInfo}
         </h3>
-        <p className="my-4">
-          {content}
-        </p>
         <h3 className="text-blue-600 dark:text-emerald-400">
           {subheading}
         </h3>
+        <p className="my-6">
+          {content}
+        </p>
         {
           expanded
             ? children
