@@ -7,6 +7,7 @@ import Subsection from "./ui/section/subsection";
 import Footer from "./ui/footer";
 import SnailExpressSubsection from "./[projects]/snail-express";
 import GrowthBeansSubsection from "./[projects]/growthbeans";
+import JLKSubsection from "./[projects]/jlk";
 
 export default function Home({
   searchParams,
@@ -35,7 +36,7 @@ export default function Home({
                 Seeking to build simple, elegant solutions to complex problems
                 <br />
                 <br />
-                Year 3 Computer Science student @ NUS
+                Year 4 Computer Science student @ NUS
               </p>
             }
           />
@@ -43,7 +44,10 @@ export default function Home({
             heading="Work"
             id='work'
             content={
-              <GrowthBeansSubsection expanded={expanded} />
+              <>
+                <JLKSubsection expanded={expanded} />
+                <GrowthBeansSubsection expanded={expanded} />
+              </>
             }
           />
           <Section
