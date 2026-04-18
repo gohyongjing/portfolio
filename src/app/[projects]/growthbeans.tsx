@@ -19,7 +19,7 @@ export default function GrowthBeansSubsection({expanded}: {expanded: string}) {
       title="Growthbeans page"
       scrolling="no"
       className="my-4 self-center h-[44rem] w-full pointer-events-none"
-      src="https://www.growthbeans.com/growth-circles.html"
+      src="https://www.growthbeans.com/growth-circles-tool.html"
     />
     <h3 className="mb-8 text-neutral-500 dark:text-neutral-400">
       Published: Jun 2024

@@ -8,15 +8,14 @@ import Footer from "./ui/footer";
 import SnailExpressSubsection from "./[projects]/snail-express";
 import GrowthBeansSubsection from "./[projects]/growthbeans";
 import JLKSubsection from "./[projects]/jlk";
+import CpfSubsection from "./[projects]/cpf";
 
-export default function Home({
+export default async function Home({
   searchParams,
 }: {
-  searchParams?: {
-    expanded?: string;
-  };
+  searchParams?: Promise<{ expanded?: string }>;
 }) {
-  const expanded = searchParams?.expanded ?? '';
+  const { expanded = '' } = (await searchParams) ?? {};
 
   return (
     <div className="bg-neutral-50 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-50">
@@ -36,7 +35,7 @@ export default function Home({
                 Seeking to build simple, elegant solutions to complex problems
                 <br />
                 <br />
-                Year 4 Computer Science student @ NUS
+                Software Engineer @ Growthbeans
               </p>
             }
           />
@@ -45,6 +44,7 @@ export default function Home({
             id='work'
             content={
               <>
+                <CpfSubsection expanded={expanded} />
                 <JLKSubsection expanded={expanded} />
                 <GrowthBeansSubsection expanded={expanded} />
               </>

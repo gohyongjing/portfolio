@@ -13,10 +13,10 @@ export default function NavLink({
   children
 }: NavBarProps) {
   return (
-    <Link href={href} passHref legacyBehavior>
-      <NavigationMenu.Link className='hover:text-neutral-800 dark:hover:text-neutral-50 cursor-pointer'>
+    <NavigationMenu.Link asChild>
+      <Link href={href} className='hover:text-neutral-800 dark:hover:text-neutral-50 cursor-pointer'>
         {children}
-      </NavigationMenu.Link>
-    </Link>
+      </Link>
+    </NavigationMenu.Link>
   );
 }
